@@ -7,3 +7,4 @@ Route::get('/', [ProdutoController::class, 'index']);
 Route::get('/produtos', [ProdutoController::class,'produtos']);
 Route::get('/create', [ProdutoController::class, 'create']);
 Route::post('/store', [ProdutoController::class, 'store']);
+Route::delete('/delete', [ProdutoController::class, 'delete']);

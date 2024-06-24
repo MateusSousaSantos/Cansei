@@ -267,7 +267,10 @@
     @media screen and (min-width: 769px) and (max-width: 1200px) {
         /*PC*/
     }
-
+    .delete_button {
+        width: 100%,
+        background-color:
+    }
 </style>
 @section('conteudo')
     <header>
@@ -309,7 +312,10 @@
 
         <div class="produtosGrid">
             @foreach ($resultados as $item)
-                <div>
+            <div>
+                    <div class="delete_button">
+                        <p>X</p>
+                    </div>
                     <img src="{{ asset('storage/images/'.$item->imageName) }}" class="imagem_produto" alt="Product Image">
                     
                         <div id="item-hover">
