@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  border: 0px solid red;
+}
+
+header {
+  padding: 3vh;
+  background-color: #ece0d3;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  color: #5a8b94;
+  font-family: "Koulen";
+  font-size: 40px;
+}
+
+h2 {
+  color: #5a8b94;
+  font-family: "Koulen";
+  font-size: 22px;
+}
+
+section {
+  font-family: "Lexend Exa", sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section h3 {
+  margin-bottom: 4vh;
+}
+
+.produtos {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Adicionar {
+  margin-left: 40vh;
+  width: 3vh;
+}
+
+/*.produtosGrid{
+  margin: 3vh;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 5;
+  gap: 2vh 2vh;
+}*/
+
+.produtosGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  flex-wrap: wrap;
+  margin: 0 10vh 0 10vh;
+  gap: 2vh;
+}
+
+.produtosGrid div {
+  width: 30vh;
+  height: 30vh;
+  background-color: #d9d9d9;
+}
+
+.setas {
+  display: flex;
+  justify-content: end;
+  margin: 3vh;
+}
+
+.setas a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.setas svg {
+  margin: 1vh;
+  width: 30%;
+}
+
+footer {
+  background-color: #2a2f3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2vh;
+  padding: 2vh;
+}
+
+footer h3 {
+  font-family: "Koulen";
+  font-weight: 300;
+  font-size: 35px;
+  color: white;
+}
+
+.integrantes {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+.integrantes div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.integrantes div img {
+  width: 100%;
+}
+
+.integrantes div p {
+  font-family: "Lexend Exa", sans-serif;
+  color: #ece0d3;
+}
+
+footer > .integrantes ~ h3 {
+  margin: 1vh;
+}
+
+@media screen and (max-width: 576px) {
+  /*mobile*/
+  header img {
+    width: 30%;
+    margin-right: 2vh;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 17px;
+  }
+  article {
+    display: none;
+  }
+  section h3 {
+    margin-top: 4vh;
+  }
+  .Adicionar {
+    margin-left: 25vh;
+    width: 3vh;
+  }
+  .integrantes div img {
+    width: 50%;
+  }
+  .integrantes div p {
+    font-size: 20px;
+  }
+  .produtosGrid {
+    margin: 0 1vh 0 1vh;
+  }
+  .produtosGrid div {
+    min-width: 20vh;
+    min-height: 20vh;
+  }
+  footer > .integrantes ~ h3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  /*tablet*/
+  article {
+    flex-wrap: nowrap;
+    width: fit-content;
+  }
+  article div {
+    width: calc(30%);
+    height: calc(30%);
+  }
+  section h3 {
+    font-size: 22px;
+  }
+  .produtosGrid div {
+    width: 20vh;
+    height: 20vh;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  /*PC*/
+}
